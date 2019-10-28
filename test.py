@@ -2,7 +2,7 @@ import encode_image as ei
 import SceneDesc
 import test_mod as tm
 import time as time
-import pyttsx
+# import pyttsx
 import sys
 def text(img):
 	t1= time.time()
@@ -15,10 +15,12 @@ def text(img):
 	encoded_images = ei.encodings(encode, image_path)
 
 	image_captions = tm.generate_captions(sd, model, encoded_images, beam_size=3)
-	engine = pyttsx.init()
+	# engine = pyttsx.init()
+	print("*******************************************************************")
 	print image_captions
-	engine.say(	str(image_captions))
-	engine.runAndWait()
+	print("*******************************************************************")
+	# engine.say(	str(image_captions))
+	# engine.runAndWait()
 
 
 if __name__ == '__main__':

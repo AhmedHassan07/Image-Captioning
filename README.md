@@ -6,13 +6,13 @@ The dataset used is flickr8k. You can request the data [here](https://illinois.e
 of the data to be downloaded will be mailed to your id. Extract the images in Flickr8K_Data and the text data in Flickr8K_Text.
 
 ## Requirements
-1. Tensorflow
-2. Keras
-3. Numpy
-4. h5py
-5. Pandas
-6. Pillow
-7. Pyttsx
+1. Python v2.7.16
+2. Tensorflow
+3. Keras
+4. Numpy
+5. h5py
+6. Pandas
+7. Pillow
 
 ## Steps to execute
 1. After extracting the data, execute the preprocess_data.py file by locating the file directory and execute "python preprocess_data.py". This file adds "start " and " end" token to the training and testing text data. On execution the file creates new txt files in Flickr8K_Text folder.
@@ -26,7 +26,7 @@ of the data to be downloaded will be mailed to your id. Extract the images in Fl
 NOTE - You can skip the training part by directly downloading the weights and model file and placing them in the Output folder since the training part wil take a lot of time if working on a non-GPU system. A GTX 1050 Ti with 4 gigs of RAM takes around 10-15 minutes for one epoch.
 
 ## Output
-The output of the model is a caption to the image and a python library called pyttsx which converts the generated text to audio
+The output of the model is a caption to the image.
 
 ## Results
 Following are a few results obtained after training the model for 70 epochs.
